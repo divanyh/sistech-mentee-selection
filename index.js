@@ -8,16 +8,16 @@ const submitBtn = document.querySelector("#submitBtn");
 
 const url = "https://sistech-api.vercel.app/blog/";
 const headers = {
-  Authorization: "Bearer cf086647-14e2-4c43-b319-ceec15d4e55d",
+  Authorization: "Bearer e5051802-2724-4a44-917c-e58ae96ea841",
 };
 
 const refreshPage = (data) => {
   data.forEach((item) => {
     blogList += `<div class="card mt-2">
         <div class="card-body row">
-        <div class="col-auto me-auto">
+        <div class="col-9 me-auto">
         <h5 class="card-title">${item.title}</h5>
-          <p class="card-text text-truncate">${item.content}</p>
+          <p class="card-text">${item.content}</p>
         </div>
         <div class="col-auto" id=${item.id}>
         <a href="#" class="btn btn-primary" id="update-blog">Update</a>
@@ -44,7 +44,7 @@ articleForm.addEventListener("submit", (e) => {
   fetch(url, {
     method: "POST",
     headers: {
-      Authorization: "Bearer cf086647-14e2-4c43-b319-ceec15d4e55d",
+      Authorization: "Bearer e5051802-2724-4a44-917c-e58ae96ea841",
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
@@ -85,7 +85,7 @@ bloggys.addEventListener("click", (e) => {
     fetch(url, {
       method: "PUT",
       headers: {
-        Authorization: "Bearer cf086647-14e2-4c43-b319-ceec15d4e55d",
+        Authorization: "Bearer e5051802-2724-4a44-917c-e58ae96ea841",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
@@ -103,12 +103,10 @@ bloggys.addEventListener("click", (e) => {
   if (likeBtnPressed) {
     const likeBtn = e.target.parentNode.querySelector("#like-blog");
 
-    // likeBtn.addEventListener("click", (e) => {
-    //   e.preventDefault();
     fetch("https://sistech-api.vercel.app/blog/like", {
       method: "POST",
       headers: {
-        Authorization: "Bearer cf086647-14e2-4c43-b319-ceec15d4e55d",
+        Authorization: "Bearer e5051802-2724-4a44-917c-e58ae96ea841",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({

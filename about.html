@@ -20,10 +20,10 @@
         <div class="d-flex" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Blog</a>
+              <a class="nav-link" aria-current="page" href="./index.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">About Me</a>
+              <a class="nav-link active" href="#">About Me</a>
             </li>
           </ul>
         </div>
@@ -31,34 +31,28 @@
     </nav>
 
     <!-- BODY -->
-    <div class="container-fluid">
-      <div class="col">
-        <div class="row mt-4 px-3">
-          <div class="container" style="max-width: 60%">
-            <h3>Write your thoughts...</h3>
-            <div class="container rounded border-sm shadow-sm p-3">
-              <form class="add-new-article">
-                <div class="mb-3">
-                  <label for="titleInput" class="form-label">Title</label>
-                  <input type="text" class="form-control" id="titleInput" />
-                </div>
-                <div class="mb-3">
-                  <label for="contentInput" class="form-label">Content</label>
-                  <textarea
-                    class="form-control"
-                    id="contentInput"
-                    aria-label="Content"
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" id="submitBtn">Create</button>
-              </form>
+    <div class="container rounded border-sm shadow-sm p-3 mt-5" style="max-width: 50%;">
+        <div class="d-flex row">
+            <div class="col-4">
+                <img src="./assets/PasFoto_Divany_Putih.png" class="img-thumbnail" style="max-height: 90%;">
             </div>
-            <div class="blogs row-col mt-4"></div>
-          </div>
+            <div class="col">
+                <div class="row">
+                    <h3>Divany Harryndira</h3>
+                    <h6>harryndira@gmail.com</h6>
+                </div>
+                <div class="row mt-2">
+                    <div class="container text-wrap">
+                        <p>Saya adalah seorang mahasiswi jurusan Ilmu Komputer di Universitas Indonesia.
+                            Saya baru saja menyelesaikan semester 4 dan akan masuk ke semester 5. Saat ini
+                            kegiatan saya hanya liburan saja, sih. Rencanya mau ngulik lebih dalam soal per-software engineering-an ini
+                            karena kayaknya enjoy tapi masih noob banget (for real selama ini kecarry kawan).
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <script src="index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
